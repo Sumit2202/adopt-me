@@ -4,10 +4,12 @@ import SearchParams from "./SearchParams";
 
 const App = () => {
   return (
-    <div>
-      <h1 id="something-imp">Adopt Me!</h1>
-      <SearchParams></SearchParams>
-    </div>
+    <React.StrictMode>
+      <div>
+        <h1 id="something-imp">Adopt Me!</h1>
+        <SearchParams></SearchParams>
+      </div>
+    </React.StrictMode>
   );
 };
 

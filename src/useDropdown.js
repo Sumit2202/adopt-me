@@ -15,7 +15,9 @@ const useDropdown = (label, defaultState, options) => {
       >
         <option>All</option>
         {options.map((item) => (
-          <option key={item.id} value={item}></option>
+          <option key={item.id} value={item}>
+            {item}
+          </option>
         ))}
       </select>
     </label>

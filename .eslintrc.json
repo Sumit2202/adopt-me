@@ -1,7 +1,7 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugins:import/errors",
+    "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
@@ -9,10 +9,10 @@
   ],
   "rules": {
     "react/prop-types": 0,
-    "no-console": 1,
-    "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": "warn"
   },
+  "parser": "babel-eslint",
   "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 2018,
